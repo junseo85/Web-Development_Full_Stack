@@ -1,0 +1,88 @@
+### CREATE five documents.
+POST http://localhost:3000/awards HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Scholarship, MM, DMA Degree at University of Texas at Austin",
+    "date": "2009-12-1",
+    "name": "jun seo",
+    "placement": "Full Scholarship"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/awards HTTP/1.1
+content-type: application/json
+
+{
+    "title": "UT Butler School of Music String Competition",
+    "date": "2013-09-10",
+    "name": "jun seo",
+    "placement": "First Prize"
+}
+
+### CREATE 3
+POST http://localhost:3000/awards HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Sorantin International Competition",
+    "date": "2013-09-01",
+    "name": "jun seo",
+    "placement": "Finalist"
+}
+
+### CREATE 4
+POST http://localhost:3000/awards HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Sidney Wright Award",
+    "date": "2013-09-01",
+    "name": "jun seo",
+    "placement": "Best Instrumentalist Award"
+}
+
+### CREATE 5
+POST http://localhost:3000/awards HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Mid-Texas Symphony Young Artist Concerto Competition",
+    "date": "2010-09-01",
+    "name": "jun seo",
+    "placement": "First Prize"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/awards HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/awards/64d5cc2020820988a31ec85a HTTP/1.1
+
+
+### UPDATE one document's date, by ID.
+### Replace the ID in the following request with one that exists
+### and update the date:
+PUT http://localhost:3000/awards/64ddb7ec7f336de372cb4d9c HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Best Instrumentalist Award and Best Instrumentalist Honorable Mention Award",
+    "date": "2011",
+    "name": "jun seo",
+    "placement": "Sidney Wright Award"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/awards/64d5cffc74507d3250214404 HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/awards HTTP/1.1
+

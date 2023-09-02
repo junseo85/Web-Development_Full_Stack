@@ -1,0 +1,343 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Niramit:wght@300&display=swap');
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+/* Add fonts from the app's server 
+    @font-face {                
+      font-family: 'FontName';
+      src: url('FontName.woff2') format('woff2');
+    } 
+    ...or hosted services like Google Fonts 
+    @import url(//fonts.googleapis.com/css?family=Font+Name);
+  */
+  
+  /* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+        /* npm install modern-normalize
+          Resets elements for browser consistency.  
+          https://www.npmjs.com/package/modern-normalize
+        */         
+  
+  /* Component-specific stylesheets, if any. 
+    @import "component1.css";   
+  */
+
+/*   ----- Variables  -----  */
+:root {
+  --red: hsla(0, 74%, 64%);
+  --white: hsl(0, 7%, 89%,89%);
+  --brown: hsla(0, 17%, 20%, 0.85);
+  --green: hsl(125, 92%, 33%);
+  --grey: hsl(240, 4%, 61%,85%);
+  --custom-embellishment-name:;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {       /* Can alternatively define in html {} or :root {} */
+  background-color:;
+  background-image: url(/Users/junseo/Desktop/OSU/3rd term/CS 290/M8/a8-seoj2-portfolio/frontend/src/images/Coffee-concert tour-jun-Switzerland.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color:;
+  font-family:'Poppins', sans-serif; /* Define with at least one font name and its related generic family name.*/
+  margin:0 auto;
+  padding:0;
+  max-width:890px;
+  line-height: 1.5;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  background-color: var(--red);
+  padding:1.5% 1% 1% 1%;
+  text-align: center;
+  height: 100px;
+  color: white;
+  border-top: 3px solid var(--green);
+  border-bottom: 3px solid var(--brown);
+}
+main {
+  background-color:var(--white);
+  border-top: 3px solid var(--brown);
+  padding: 2%;
+}
+section {}
+  article {
+    border-top: 3px solid var(--brown);
+  }
+    #topic1 {}
+    #topic2 {}
+div {}
+aside {}
+footer {background-color:var(--brown);
+  padding: 2%;
+  color:aliceblue;
+  text-align: center;
+  border-top: 3px solid var(--green);
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+a:link {}
+a:hover {}
+a:active {}
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  background-color: var(--grey);
+  font-family: 'Luckiest Guy', cursive;
+  
+  text-decoration: none;
+  text-align: center;
+}
+nav a {
+  background-color:var(--green);
+  padding:1%;
+  text-decoration: none;
+  
+}
+.local {
+  background-color: rgb(139, 67, 16);
+  text-align: center;
+  text-decoration: none;
+
+}
+.local a {
+  background-color: rgb(244, 244, 244,70%);
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1% 45%;
+  text-decoration: none;
+  text-align: center;
+}
+.local a:hover{
+  background-color: aquamarine;
+  padding: 5% 45%;
+  border: 5px dotted;
+}
+nav a:hover {
+  background-color: var(--grey);
+  text-align: center;
+  padding: 5%;
+  border: 3px solid;
+}
+
+/*  -----  Typography  ----- */
+p {}
+br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Luckiest Guy', cursive;
+  padding: 2%;
+} 
+h1 {
+  
+}
+h2 {
+  font-size: 38px;
+  color: var(--brown);
+}
+h3 {
+  font-size: 30px;
+  color:hsl(313, 74%, 37%)
+}
+h4 {}
+h5 {}
+h6 {}
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+  q {}
+  cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {}
+
+/*  ----- Table ----- */
+table {
+  border-collapse: collapse;
+  border: 1px solid brown;
+  text-align: left;
+  
+}
+caption {}
+thead {
+  
+  
+}
+tbody {
+  
+  
+}
+tfoot {}
+tr {}
+  tr:nth-child(even) {}
+th {
+  color: rgb(92, 141, 13);
+  border: 2px solid rgb(226, 55, 55);
+  text-align: center;
+  padding:5px;
+}
+td {
+  color: rgb(19, 109, 109);
+  border: 1px solid brown;
+  padding:5px;
+  border-collapse: collapse;
+}
+  td:nth-child(1) {}
+colgroup {}
+data {}
+datalist {}
+
+
+/*  ----- Form ----- */
+form {
+  
+  
+}
+fieldset {border-color: brown;
+  border-top: 5px;
+  border-left: 5px;
+  color: blueviolet;
+  }
+  legend {
+  color:rgb(50, 50, 218);
+  font-family: 'Luckiest Guy', cursive;
+  font-size: large;
+  text-decoration: none;
+  text-align: center;
+  }
+label {}
+  button {
+    border-color: brown;
+    border-top: 1px;
+    border-left: 1px;
+  }
+  input {
+    font-family: inherit;
+    padding:1%;
+    background-color: rgb(230, 232, 160);
+  }
+  output {}
+  meter {}
+  progress {}
+  select {
+    margin: auto;
+    padding:auto;
+  }
+    optgroup {}
+    option {
+      margin: auto;
+      font-size: large;
+      padding:auto;
+    }
+  textarea {
+    font-family: inherit;
+    padding: 1%;
+    background-color: rgb(230, 232, 160);
+  }
+
+/* ----- Media ----- */
+figure {
+  margin: 1%;
+  padding: 0;
+  width: 50%;
+  float: right;
+  border: 1px solid gray;
+}
+
+  figcaption {
+    font-size: 90%;
+    color:rgb(6, 6, 164);
+    text-align: center;
+    display:block;
+    padding: 1%;
+    
+  }
+  figure img {
+    width: 100%;
+  margin: 0;
+  padding: 0;
+  }
+svg {}
+picture {
+  
+}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+
+
+
+
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+
+@media (prefers-reduced-motion: no-preference) {
+    h1 i .App-logo {
+        animation: App-logo-spin infinite 15s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {transform: rotate( 0deg);}
+    to   {transform: rotate(15deg);}
+}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
